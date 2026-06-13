@@ -1,0 +1,1 @@
+apt update && apt upgrade -y && apt install curl nano -y && curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && apt install nodejs -y && npm install -g pm2 && npm init -y && npm install express cors google-play-scraper axios && pm2 start server.js --name "api-scraper" && pm2 save && pm2 startup
